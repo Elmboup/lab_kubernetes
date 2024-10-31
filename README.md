@@ -38,7 +38,7 @@ minikube service backend-service
  ```
 
 ## Nota : 
-- Le service backend-service est configuré en tant que NodePort, avec le port 30000 exposé. Cependant, si http://<ip>:30000 ne fonctionne pas,faite un port forwarding:
+- The backend-service is configured as a NodePort, with port 30000 exposed. However, if http://:30000 does not work, make a port forwarding:
 ```sh
 kubectl port-forward svc/backend-service 30000:80
 ```
